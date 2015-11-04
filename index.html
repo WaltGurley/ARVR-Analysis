@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>AR/VR Request Analyses</title>
+
+		<meta name="description" content="Presentation of analyses of Google Glass and Oculus Rift Request Forms.">
+		<meta name="author" content="Walt Gurley">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/walt.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Campus Interest in AR &amp; VR</h1>
+					<h3>Analysis of Google Glass &amp; Oculus Rift Techlending Requests</h3>
+				</section>
+
+				<section>
+					<h3>Data derived from request forms</h3>
+					<table>
+						<col style="width:30%">
+						<thead>
+							<tr>
+								<th>NCSU Status</th>
+								<th>What are you going to use <em>x</em> for?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><mark>PhD Student</mark></td>
+								<td>I want to... get a feel of it and the <mark>development environment</mark>... for a potential <mark>app</mark>.</td>
+							</tr>
+							<tr>
+								<td><mark>Faculty</mark></td>
+								<td>... <mark>collecting data</mark> in an experimental <mark>undergraduate course</mark>...</td>
+							</tr>
+							<tr>
+								<td><mark>Undergraduate Student</mark></td>
+								<td>For <mark>fun</mark> :)</td>
+							</tr>
+							<tr>
+								<td><b>...</b></td>
+								<td><b>...</b></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Results</h2>
+				</section>
+
+				<section data-state="vis-slide1">
+					<h3>General breakdown</h3>
+					<div class="vis-container-1"></div>
+				</section>
+
+				<section data-state="vis-slide2">
+					<h3>Request by affiliation</h3>
+					<table style="font-size: 60%">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Undergrad.<span style="color:#a6cee3">&squf;</span></th>
+								<th>Masters<span style="color:#1f78b4">&squf;</span></th>
+								<th>PhD<span style="color:#b2df8a">&squf;</span></th>
+								<th>Staff<span style="color:#33a02c">&squf;</span></th>
+								<th>Faculty<span style="color:#fb9a99">&squf;</span></th>
+								<th>Other<span style="color:#e31a1c">&squf;</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><b>Google Glass</b></td>
+								<td>46</td>
+								<td>47</td>
+								<td>21</td>
+								<td>6</td>
+								<td>5</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td><b>Oculus Rift</b></td>
+								<td>19</td>
+								<td>12</td>
+								<td>0</td>
+								<td>2</td>
+								<td>0</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td><b>Total</b></td>
+								<td>65</td>
+								<td>59</td>
+								<td>21</td>
+								<td>8</td>
+								<td>5</td>
+								<td>6</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="vis-container-2"></div>
+				</section>
+
+				<section>
+					<h3>Textual Analysis</h3>
+					<img style="border: none;box-shadow: none;" src="./css/wordFreq.svg" alt="this should be a cool bar graph" />
+					<ul style="font-size: 60%;">
+						<li class="fragment">When a request length was specified most requesters indicated they would like to use the device within the span of one day, though length requests ranged from a few hours to one week.</li>
+						<li class="fragment">The overwhelming motivation for requesters to use equipment was for research or development</li>
+						<li class="fragment">Requests for the Oculus Rift were related more to 3D and game design while requests for Google Glass were for more utilitarian purposes</li>
+						<li class="fragment">Computer science and engineering were the most represented identifiable fields of study for requesters.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>More info</h3>
+					<h6>Ipython Notebook: <a href="https://github.com/WaltGurley/ARVR-Analysis/blob/master/AR_VR_Request_Analysis.ipynb">GitHub Render</a></h6>
+					<h6>Text Report: <a href="https://docs.google.com/a/ncsu.edu/document/d/1VKZi5okgZ842vynT9LnlSEurP1hb8-UTylH-iklujAM/edit?usp=sharing">Google Doc</a></h6>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+		<script src="js/walt.js"></script>
+
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+			});
+
+		</script>
+
+	</body>
+</html>

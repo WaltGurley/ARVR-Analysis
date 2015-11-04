@@ -1,0 +1,51 @@
+.vis-container-1 {
+  width: 100%;
+  height: 660px; /* reveal slide height (700) minus top & bottom padding (20 * 2)*/
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.Total {
+  fill: #cccccc;
+}
+
+.Glass {
+  fill: #2c7bb6;
+}
+
+.Glass rect {
+  fill: #2c7bb6;
+}
+
+.Rift {
+  fill: #d7191c;
+}
+
+.Rift rect {
+  fill: #d7191c;
+}
+
+.graph-axis{
+  stroke-width: 1px;
+  stroke: #000;
+  fill: none;
+}
+
+.graph-axis text{
+  font-size: 50%;
+  fill: #000;
+}
+
+.vis-container-2 {
+  width: 100%;
+  height: 470px;
+}
+
+.no-bar > .reveal {
+  margin: !important none;
+  border: none;
+  box-shadow: none;
+}
